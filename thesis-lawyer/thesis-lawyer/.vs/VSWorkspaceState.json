@@ -1,7 +1,17 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Areas",
+    "\\Areas\\Identity",
+    "\\Areas\\Identity\\Pages",
+    "\\bin",
+    "\\bin\\Debug",
+    "\\Controllers",
+    "\\Data",
+    "\\Data\\Migrations",
+    "\\obj",
+    "\\obj\\Debug"
   ],
-  "SelectedNode": "\\Program.cs",
+  "SelectedNode": "\\thesis-lawyer.csproj",
   "PreviewInSolutionExplorer": false
 }
