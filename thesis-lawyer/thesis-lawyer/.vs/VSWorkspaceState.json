@@ -1,17 +1,16 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Areas",
-    "\\Areas\\Identity",
-    "\\Areas\\Identity\\Pages",
-    "\\bin",
-    "\\bin\\Debug",
-    "\\Controllers",
     "\\Data",
     "\\Data\\Migrations",
+    "\\Models",
     "\\obj",
-    "\\obj\\Debug"
+    "\\obj\\Debug",
+    "\\Views",
+    "\\Views\\Home",
+    "\\Views\\Shared",
+    "\\wwwroot"
   ],
-  "SelectedNode": "\\thesis-lawyer.csproj",
+  "SelectedNode": "\\Data\\ApplicationDbContext.cs",
   "PreviewInSolutionExplorer": false
 }

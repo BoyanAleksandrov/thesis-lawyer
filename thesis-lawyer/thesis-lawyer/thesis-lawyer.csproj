@@ -22,4 +22,13 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.16" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Remove="Views\Shared\ClaimsExtendsion.cs" />
+    <Compile Remove="Extensions\ClaimsExtension.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Extensions" />
+  </ItemGroup>
+
 </Project>

@@ -11,7 +11,7 @@ namespace thesis_lawyer.Data
         {
         }
 
-        
+        public DbSet<UserModel> UserModels { get; set; }
     }
 
     
