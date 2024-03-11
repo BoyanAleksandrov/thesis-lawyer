@@ -82,6 +82,11 @@ namespace thesis_lawyer.Areas.Identity.Pages.Account
             public string FirstName { get; set; }
 
             [Required]
+            [Display(Name = "Premium User")]
+
+            public bool isPremium { get; set; }
+            
+            [Required]
             [EmailAddress]
             [Display(Name = "Email")]
             public string Email { get; set; }
@@ -120,7 +125,7 @@ namespace thesis_lawyer.Areas.Identity.Pages.Account
             if (ModelState.IsValid)
             {
                 var user = CreateUser();
-
+                user.isPremium = Input.isPremium;
                 user.FirstName = Input.FirstName;
 
                 await _userStore.SetUserNameAsync(user, Input.Email, CancellationToken.None);
