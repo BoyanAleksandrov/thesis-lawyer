@@ -2,8 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\thesis-lawyer",
-    "\\thesis-lawyer\\thesis-lawyer"
+    "\\thesis-lawyer\\thesis-lawyer",
+    "\\thesis-lawyer\\thesis-lawyer\\Views",
+    "\\thesis-lawyer\\thesis-lawyer\\Views\\Home"
   ],
-  "SelectedNode": "\\thesis-lawyer\\thesis-lawyer\\Program.cs",
+  "SelectedNode": "\\thesis-lawyer\\thesis-lawyer\\Views\\Home\\chatlawyer.cshtml",
   "PreviewInSolutionExplorer": false
 }
