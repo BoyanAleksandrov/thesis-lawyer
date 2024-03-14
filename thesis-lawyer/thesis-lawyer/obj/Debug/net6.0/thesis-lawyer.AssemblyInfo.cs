@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("thesis-lawyer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ca55452327f0b650a3dbf389ca68750fa972c505")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d7a0703863ea0fe22c0304a9dd0c9bf72b69f914")]
 [assembly: System.Reflection.AssemblyProductAttribute("thesis-lawyer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("thesis-lawyer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
