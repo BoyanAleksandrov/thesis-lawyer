@@ -1,4 +1,9 @@
-﻿@{
+﻿@using Microsoft.AspNetCore.Identity
+@using thesis_lawyer.Data
+@using Microsoft.Extensions.DependencyInjection
+@inject SignInManager<UserModel> SignInManager
+@inject UserManager<UserModel> UserManager
+@{
     ViewData["Title"] = "Chat-Lawyer";
 }
 <html lang="en" style="scroll-behavior: smooth">
@@ -67,17 +72,29 @@
                             </li>
                         </ul>
                         <hr>
-                        <div class="dropdown fixed-bottom pl-4">
-                            <a href="#" class="d-flex align-items-center text-body text-decoration-none "
-                               id="dropdownUser1"
-                               aria-expanded="false">
-                                <img src="https://github.com/mdo.png" alt="hugenerd" width="30" height="30"
-                                     class="rounded-circle">
-                                <span class="d-none d-sm-inline mx-1">Test User</span>
-                            </a>
+                        @if (SignInManager.IsSignedIn(User) && User.Identity.IsAuthenticated)
+                        {
+                            <div class="dropdown fixed-bottom pl-4">
+                                @{
+                                    var firstName = "";
+                                    var user = await UserManager.GetUserAsync(User);
+                                    firstName = user.FirstName;
+                                }
+                               
+                                    <a href="#" class="d-flex align-items-center text-body text-decoration-none "
+                                       id="dropdownUser1"
+                                       aria-expanded="false">
+                                        <img src="https://github.com/mdo.png" alt="hugenerd" width="30" height="30"
+                                             class="rounded-circle">
+                                        <span class="d-none d-sm-inline mx-1">@firstName</span>
+                                    </a>
+                        
 
-
+                                
+                            
                         </div>
+                        }
+                        
 
                     </div>
 
