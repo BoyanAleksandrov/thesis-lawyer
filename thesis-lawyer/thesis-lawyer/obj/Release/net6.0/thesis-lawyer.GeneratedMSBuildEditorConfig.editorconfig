@@ -50,8 +50,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Boyan1/Documents/GitHub/thesis-lawyer/thesis-lawyer/thesis-lawyer/Views/Home/chatlawyer.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxjaGF0bGF3eWVyLmNzaHRtbA==
+[C:/Users/Boyan1/Documents/GitHub/thesis-lawyer/thesis-lawyer/thesis-lawyer/Views/Chat/chatlawyer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hhdFxjaGF0bGF3eWVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hhdFxjaGF0bGF3eWVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Boyan1/Documents/GitHub/thesis-lawyer/thesis-lawyer/thesis-lawyer/Views/Home/Index.cshtml]

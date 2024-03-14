@@ -25,7 +25,6 @@
   <ItemGroup>
     <Compile Remove="Views\Shared\ClaimsExtendsion.cs" />
     <Compile Remove="Extensions\ClaimsExtension.cs" />
-    <Compile Remove="Views\Chat\**" />
     <Compile Remove="Views\Home\Chat.cshtml.cs" />
   </ItemGroup>
 
@@ -34,15 +33,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Remove="Views\Chat\**" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Remove="Views\Chat\**" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Remove="Views\Chat\**" />
     <Content Remove="Views\Home\Chat.cshtml" />
   </ItemGroup>
 

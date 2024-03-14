@@ -18,10 +18,7 @@ namespace thesis_lawyer.Controllers
             return View();
         }
         
-        public IActionResult chatlawyer()
-        {
-            return View();
-        }
+        
 
         public IActionResult Privacy()
         {
