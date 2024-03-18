@@ -5,10 +5,17 @@
 @inject UserManager<UserModel> UserManager
 
 
-
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="js/site.js"></script>
+</head>
 <ul class="navbar-nav">
 @if (SignInManager.IsSignedIn(User))
 {
+    <li class="nav-item px-3">
+        <a href="/Chat/chatlawyer" class="btn btn-primary" style="background-color: #4495cb; width: auto">Try now</a>
+    </li>
     <li class="nav-item">
         @{
             var firstName = "";
@@ -28,6 +35,12 @@
 }
 else
 {
+    <li class="nav-item px-3">
+        <button onclick="alertUnsigned()" class="btn btn-primary" type="button" 
+                style="background-color: #4495cb; width: auto"><a style="color: white;text-decoration: none;">Try
+                now</a>
+        </button>
+    </li>
     <li class="nav-item">
         <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Register">Register</a>
     </li>

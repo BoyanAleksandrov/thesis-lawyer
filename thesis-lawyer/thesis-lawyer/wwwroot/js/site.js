@@ -62,3 +62,7 @@ $(function () {
 
    
 });
+
+function alertUnsigned(){
+    alert("You must be signed in to use this feature!");
+}
