@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using thesis_lawyer.Data;
+using thesis_lawyer.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 

@@ -11,7 +11,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.WebUtilities;
-using thesis_lawyer.Data;
+using thesis_lawyer.Models;
 
 namespace thesis_lawyer.Areas.Identity.Pages.Account
 {

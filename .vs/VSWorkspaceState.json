@@ -3,9 +3,11 @@
     "",
     "\\thesis-lawyer",
     "\\thesis-lawyer\\thesis-lawyer",
+    "\\thesis-lawyer\\thesis-lawyer\\Controllers",
     "\\thesis-lawyer\\thesis-lawyer\\Views",
+    "\\thesis-lawyer\\thesis-lawyer\\Views\\Chat",
     "\\thesis-lawyer\\thesis-lawyer\\Views\\Home"
   ],
-  "SelectedNode": "\\thesis-lawyer\\thesis-lawyer\\Views\\Home",
+  "SelectedNode": "\\thesis-lawyer\\thesis-lawyer\\Views",
   "PreviewInSolutionExplorer": false
 }

@@ -11,8 +11,9 @@ using thesis_lawyer.Data;
 namespace thesis_lawyer.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    public class ApplicationDbContextModelSnapshot : ModelSnapshot
     {
+
         protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
@@ -282,6 +283,10 @@ namespace thesis_lawyer.Data.Migrations
                         .IsRequired();
                 });
 #pragma warning restore 612, 618
+
+
         }
+
     }
+
 }

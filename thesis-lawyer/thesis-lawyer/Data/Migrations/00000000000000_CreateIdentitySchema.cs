@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Microsoft.EntityFrameworkCore.Migrations;
 using System;
 
@@ -12,6 +13,7 @@ namespace thesis_lawyer.Data.Migrations
                 name: "AspNetRoles",
                 columns: table => new
                 {
+                
                     Id = table.Column<string>(nullable: false),
                     Name = table.Column<string>(maxLength: 256, nullable: true),
                     NormalizedName = table.Column<string>(maxLength: 256, nullable: true),
@@ -26,6 +28,7 @@ namespace thesis_lawyer.Data.Migrations
                 name: "AspNetUsers",
                 columns: table => new
                 {
+                   
                     Id = table.Column<string>(nullable: false),
                     UserName = table.Column<string>(maxLength: 256, nullable: true),
                     NormalizedUserName = table.Column<string>(maxLength: 256, nullable: true),
