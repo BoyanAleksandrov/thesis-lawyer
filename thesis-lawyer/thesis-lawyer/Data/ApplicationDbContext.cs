@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using System.Reflection.Emit;
+using thesis_lawyer.Areas.Identity.Pages.Account;
 using thesis_lawyer.Data.Migrations;
 using thesis_lawyer.Models;
 
@@ -16,6 +17,8 @@ namespace thesis_lawyer.Data
         }
 
         public DbSet<UserModel> UserModels { get; set; }
+        
+
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);

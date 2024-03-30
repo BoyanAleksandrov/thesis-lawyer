@@ -8,5 +8,6 @@ namespace thesis_lawyer.Models
         [Key]
         public string FirstName { get; set; }
         public bool isPremium { get; set; }
+       
     }
 }
