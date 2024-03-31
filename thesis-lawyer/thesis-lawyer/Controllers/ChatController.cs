@@ -3,6 +3,8 @@
 using Microsoft.AspNetCore.Mvc;
 using System;
 using IBM.Cloud.SDK.Core.Authentication.Iam;
+using thesis_lawyer.Data;
+using thesis_lawyer.Entities;
 
 namespace thesis_lawyer.Controllers
 {
@@ -11,10 +13,12 @@ namespace thesis_lawyer.Controllers
         private string _apiKey = "KQpwSLvnAsVDzTnm_382btKs_B30IhafZyavsejojuCF";
         private string _draftId = "7f5820e4-4b80-41a2-ba68-db3789ebe733";
         private AssistantService _assistantService;
+        private readonly ApplicationDbContext _context;
         private string _sessionId;
 
-        public ChatController()
+        public ChatController(ApplicationDbContext context)
         {
+            _context = context;
             IamAuthenticator authenticator = new IamAuthenticator(apikey: _apiKey);
             _assistantService = new AssistantService("2021-06-14", authenticator);
             _assistantService.SetServiceUrl("https://api.eu-gb.assistant.watson.cloud.ibm.com/instances/7f39927a-d244-4bcc-b08f-1f5367946dcf");
@@ -47,9 +51,19 @@ namespace thesis_lawyer.Controllers
 
         // Action method to send a message to Watson Assistant
         [HttpPost]
-        public IActionResult SendMessageToWatson(string message)
+        public async Task<IActionResult> SendMessageToWatson(string message)
         {
             var response = SendMessage(message);
+            var messageDto = new History
+            {
+                Id = "1",
+                UserId = "tes",
+                Message = message,
+                SentReceived = false
+            };
+            _context.ChatHistory.Add(messageDto);
+            await _context.SaveChangesAsync();
+
             Console.WriteLine(message);
             return Json(new { response });
         }

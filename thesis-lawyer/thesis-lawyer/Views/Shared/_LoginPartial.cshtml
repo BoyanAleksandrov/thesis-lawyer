@@ -19,14 +19,17 @@
         <a href="/Chat/chatlawyer" class="btn btn-primary" style="background-color: #4495cb; width: auto">Try now</a>
     </li>
     <li class="nav-item">
-        @{
-            var firstName = "";
-            if (User.Identity.IsAuthenticated)
-            {
-                var user = await UserManager.GetUserAsync(User);
-                firstName = user.Email;
-            }
-        }
+       @{
+           var firstName = "";
+           if (User.Identity.IsAuthenticated)
+           {
+               var user = await UserManager.GetUserAsync(User);
+               if (user != null)
+               {
+                   firstName = user.Email; // Assuming FirstName is the property you want to display
+               }
+           }
+       }
         <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hello @firstName</a>
     </li>
     <li class="nav-item">
