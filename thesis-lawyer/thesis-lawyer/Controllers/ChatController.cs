@@ -3,8 +3,10 @@
 using Microsoft.AspNetCore.Mvc;
 using System;
 using IBM.Cloud.SDK.Core.Authentication.Iam;
+using Microsoft.AspNetCore.Identity;
 using thesis_lawyer.Data;
 using thesis_lawyer.Entities;
+using thesis_lawyer.Models;
 
 namespace thesis_lawyer.Controllers
 {
@@ -15,14 +17,14 @@ namespace thesis_lawyer.Controllers
         private AssistantService _assistantService;
         private readonly ApplicationDbContext _context;
         private string _sessionId;
-
-        public ChatController(ApplicationDbContext context)
+        private readonly UserManager<UserModel> _userManager;
+        public ChatController(ApplicationDbContext context, UserManager<UserModel> userManager)
         {
             _context = context;
             IamAuthenticator authenticator = new IamAuthenticator(apikey: _apiKey);
             _assistantService = new AssistantService("2021-06-14", authenticator);
             _assistantService.SetServiceUrl("https://api.eu-gb.assistant.watson.cloud.ibm.com/instances/7f39927a-d244-4bcc-b08f-1f5367946dcf");
-
+            _userManager = userManager;
             // Create session when ChatController is instantiated
             CreateSession();
         }
@@ -54,10 +56,11 @@ namespace thesis_lawyer.Controllers
         public async Task<IActionResult> SendMessageToWatson(string message)
         {
             var response = SendMessage(message);
+            var user = await _userManager.GetUserAsync(User);
             var messageDto = new History
             {
-                Id = "1",
-                UserId = "tes",
+                Id = "7",
+                UserId = user.Email,
                 Message = message,
                 SentReceived = false
             };
