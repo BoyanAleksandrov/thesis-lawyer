@@ -36,7 +36,7 @@ namespace thesis_lawyer.Controllers
         {
             // Retrieve or create the assistant service, session ID, and current chat
            
-            //_assistantService = HttpContext.Session.GetObject<AssistantService>("AssistantService");
+           // _assistantService = HttpContext.Session.GetObject<AssistantService>("AssistantService");
          
             _sessionId = HttpContext.Session.GetString("SessionId");
             _currentChat = HttpContext.Session.GetObject<Chat>("CurrentChat");
@@ -115,9 +115,17 @@ namespace thesis_lawyer.Controllers
                 UserForeignKey = user.Id,
                 MessageCategory = "sent", // Assuming you have a method to determine message category
             };
+            var responseDto = new HistoryChat
+            {
+                ChatId = _currentChat.Id, // Use _currentChat's Id
+                Message = response,
+                UserForeignKey = user.Id,
+                MessageCategory = "received", // Assuming you have a method to determine message category
+            };
 Console.WriteLine(_sessionId);
             // Add the message to the database
             _context.HistoryChats.Add(messageDto);
+            _context.HistoryChats.Add(responseDto);
             _context.SaveChanges(); // Synchronously save changes
 
             // Return the response
@@ -128,7 +136,7 @@ Console.WriteLine(_sessionId);
         { try
             
             {
-              
+        
                 var result = _assistantService.Message(
                     assistantId: _draftId,
                     sessionId: _sessionId,
@@ -138,8 +146,7 @@ Console.WriteLine(_sessionId);
                         Text = message
                     }
                 );
-                
-
+              
                 return result.Result.Output.Generic[0].Text;
             }
             catch (Exception ex)
