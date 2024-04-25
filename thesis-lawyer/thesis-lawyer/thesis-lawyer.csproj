@@ -31,10 +31,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Extensions" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Content Remove="Views\Home\Chat.cshtml" />
   </ItemGroup>
 

@@ -8,6 +8,7 @@ namespace thesis_lawyer.Entities;
 public class History
 {
     [Key]
+    [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     public string Id { get; set; }
 
     public string UserId { get; set; }

@@ -5,42 +5,43 @@
 namespace thesis_lawyer.Data.Migrations
 {
     /// <inheritdoc />
-    public partial class AddHistoryTable : Migration
+    public partial class OneToMany : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.AddColumn<string>(
-                name: "UserId",
-                table: "AspNetUsers",
-                type: "nvarchar(450)",
-                nullable: true);
+           
+
+            
 
             migrationBuilder.CreateTable(
-                name: "ChatHistory",
+                name: "HistoryChats",
                 columns: table => new
                 {
-                    Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    UserId = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
                     Message = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    SentReceived = table.Column<bool>(type: "bit", nullable: false)
+                    UserForeignKey = table.Column<string>(type: "nvarchar(450)", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_ChatHistory", x => x.Id);
+                    table.PrimaryKey("PK_HistoryChats", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_HistoryChats_AspNetUsers_UserForeignKey",
+                        column: x => x.UserForeignKey,
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
-            migrationBuilder.CreateIndex(
-                name: "IX_AspNetUsers_UserId",
-                table: "AspNetUsers",
-                column: "UserId");
+          
 
-            migrationBuilder.AddForeignKey(
-                name: "FK_AspNetUsers_ChatHistory_UserId",
-                table: "AspNetUsers",
-                column: "UserId",
-                principalTable: "ChatHistory",
-                principalColumn: "Id");
+            migrationBuilder.CreateIndex(
+                name: "IX_HistoryChats_UserForeignKey",
+                table: "HistoryChats",
+                column: "UserForeignKey");
+
+          
         }
 
         /// <inheritdoc />
@@ -52,6 +53,9 @@ namespace thesis_lawyer.Data.Migrations
 
             migrationBuilder.DropTable(
                 name: "ChatHistory");
+
+            migrationBuilder.DropTable(
+                name: "HistoryChats");
 
             migrationBuilder.DropIndex(
                 name: "IX_AspNetUsers_UserId",

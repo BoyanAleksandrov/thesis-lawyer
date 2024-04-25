@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using Newtonsoft.Json;
+using thesis_lawyer.Entities;
 
 namespace thesis_lawyer.Models
 {
@@ -10,6 +12,10 @@ namespace thesis_lawyer.Models
     
         public string FirstName { get; set; }
         public bool isPremium { get; set; }
-       
+        public ICollection<HistoryChat> HistoryChats { get; set; }
+        [JsonIgnore]
+        public ICollection<Chat> Chats { get; set; }
     }
+
+    
 }

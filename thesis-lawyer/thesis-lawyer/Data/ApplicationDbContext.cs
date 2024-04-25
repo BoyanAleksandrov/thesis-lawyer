@@ -20,15 +20,35 @@ namespace thesis_lawyer.Data
         }
 
         public DbSet<History> ChatHistory { get; set; }
+     
         public DbSet<UserModel> UserModels { get; set; }
         [ForeignKey("Id")]
         public virtual ICollection<History> History { get; set; }
+
+        public DbSet<HistoryChat> HistoryChats { get; set; }
+        public DbSet<Chat> Chat { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
             builder.Entity<History>().HasOne<UserModel>().WithMany().HasForeignKey(h => h.UserId);
+            builder.Entity<HistoryChat>()
+                .HasOne(h => h.User)
+                .WithMany(u => u.HistoryChats)
+                .HasForeignKey(h => h.UserForeignKey)
+                .IsRequired();
+            builder.Entity<UserModel>()
+                .HasMany(u => u.Chats)
+                .WithOne(c => c.User)
+                .IsRequired()
+                .OnDelete(DeleteBehavior.Restrict); 
 
+            builder.Entity<Chat>()
+                .HasMany(c => c.Messages)
+                .WithOne(m => m.Chat)
+                .HasForeignKey(m => m.ChatId)
+                .IsRequired()
+                .OnDelete(DeleteBehavior.Cascade);
             // Configure Identity related entities' primary keys
             builder.Entity<IdentityRole>().HasKey(role => role.Id);
             builder.Entity<IdentityRoleClaim<string>>().HasKey(claim => claim.Id);

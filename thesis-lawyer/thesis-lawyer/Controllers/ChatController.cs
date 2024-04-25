@@ -1,82 +1,134 @@
-﻿using IBM.Watson.Assistant.v2;
-
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Identity;
 using System;
 using IBM.Cloud.SDK.Core.Authentication.Iam;
-using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using thesis_lawyer.Data;
 using thesis_lawyer.Entities;
 using thesis_lawyer.Models;
+using System.Threading.Tasks;
+using System.Collections.Generic;
+using System.Security.Claims;
+using thesis_lawyer.Extensions;
+using IBM.Watson.Assistant.v2;
+using Microsoft.AspNetCore.Http;
 
 namespace thesis_lawyer.Controllers
 {
     public class ChatController : Controller
     {
-        private string _apiKey = "KQpwSLvnAsVDzTnm_382btKs_B30IhafZyavsejojuCF";
-        private string _draftId = "7f5820e4-4b80-41a2-ba68-db3789ebe733";
+        private readonly string _apiKey = "KQpwSLvnAsVDzTnm_382btKs_B30IhafZyavsejojuCF";
+        private readonly string _draftId = "7f5820e4-4b80-41a2-ba68-db3789ebe733";
         private AssistantService _assistantService;
-        private readonly ApplicationDbContext _context;
-        private string _sessionId;
+        private static string _sessionId;
+        private Chat _currentChat;
         private readonly UserManager<UserModel> _userManager;
-        public ChatController(ApplicationDbContext context, UserManager<UserModel> userManager)
+        private readonly ApplicationDbContext _context;
+
+        public ChatController(UserManager<UserModel> userManager, ApplicationDbContext context)
         {
-            _context = context;
-            IamAuthenticator authenticator = new IamAuthenticator(apikey: _apiKey);
-            _assistantService = new AssistantService("2021-06-14", authenticator);
-            _assistantService.SetServiceUrl("https://api.eu-gb.assistant.watson.cloud.ibm.com/instances/7f39927a-d244-4bcc-b08f-1f5367946dcf");
             _userManager = userManager;
-            // Create session when ChatController is instantiated
-            CreateSession();
+            _context = context;
+            _assistantService = CreateAssistantService();
         }
 
-        private void CreateSession()
-        {
-            try
-            {
-                var result = _assistantService.CreateSession(assistantId: _draftId);
-                _sessionId = result.Result.SessionId;
-                Console.WriteLine("============SESSION CREATED============");
-                
-            }
-            catch (Exception ex)
-            {
-                // Handle exception
-                Console.WriteLine("Error creating session: " + ex.Message);
-            }
-        }
-
-        // Action method to display the chat view
         public IActionResult chatlawyer()
         {
-            return View();
+            // Retrieve or create the assistant service, session ID, and current chat
+           
+            //_assistantService = HttpContext.Session.GetObject<AssistantService>("AssistantService");
+         
+            _sessionId = HttpContext.Session.GetString("SessionId");
+            _currentChat = HttpContext.Session.GetObject<Chat>("CurrentChat");
+
+            InitializeDependencies();
+             
+          
+
+            // Pass the new chat session to the view
+            return View(_currentChat);
         }
 
-        // Action method to send a message to Watson Assistant
-        [HttpPost]
-        public async Task<IActionResult> SendMessageToWatson(string message)
+        private void InitializeDependencies()
         {
-            var response = SendMessage(message);
-            var user = await _userManager.GetUserAsync(User);
-            var messageDto = new History
+            _assistantService = CreateAssistantService();
+            _sessionId = CreateSession(_assistantService);
+            var user = _userManager.GetUserAsync(User).Result;
+            _currentChat = CreateNewChatForUser(user, _context);
+
+            // Store dependencies in session
+           // HttpContext.Session.SetObject("AssistantService", _assistantService);
+            HttpContext.Session.SetString("SessionId", _sessionId);
+            Console.WriteLine(_sessionId);
+            HttpContext.Session.SetObject("CurrentChat", _currentChat);
+        }
+
+        private AssistantService CreateAssistantService()
+        {
+            IamAuthenticator authenticator = new IamAuthenticator(apikey: _apiKey);
+            var assistantService = new AssistantService("2021-06-14", authenticator);
+            assistantService.SetServiceUrl("https://api.eu-gb.assistant.watson.cloud.ibm.com/instances/7f39927a-d244-4bcc-b08f-1f5367946dcf");
+            return assistantService;
+        }
+
+        private string CreateSession(AssistantService assistantService)
+        {
+            var result = assistantService.CreateSession(assistantId: _draftId);
+            return result.Result.SessionId;
+        }
+
+        private Chat CreateNewChatForUser(UserModel user, ApplicationDbContext context)
+        {
+            var newChat = new Chat
             {
-                Id = "7",
-                UserId = user.Email,
-                Message = message,
-                SentReceived = false
+                User = user,
+                Messages = new List<HistoryChat>()
             };
-            _context.ChatHistory.Add(messageDto);
-            await _context.SaveChangesAsync();
+
+            context.Chat.Add(newChat);
+            context.SaveChanges(); // Save changes immediately to get the chat Id
+
+            return newChat;
+        }
+
+        // Action method for sending messages to Watson
+        [HttpPost]
+        public IActionResult SendMessageToWatson(string message)
+        {
+            
+            // Use _currentChat in your method
+            var response = SendMessage(message);
 
             Console.WriteLine(message);
+        
+            Console.WriteLine(_draftId);
+            var user = _userManager.GetUserAsync(User).Result;
+
+            // Retrieve the current chat from the session
+            _currentChat = HttpContext.Session.GetObject<Chat>("CurrentChat");
+
+            // Create a new HistoryChat entity and set the ChatId automatically
+            var messageDto = new HistoryChat
+            {
+                ChatId = _currentChat.Id, // Use _currentChat's Id
+                Message = message,
+                UserForeignKey = user.Id,
+                MessageCategory = "sent", // Assuming you have a method to determine message category
+            };
+Console.WriteLine(_sessionId);
+            // Add the message to the database
+            _context.HistoryChats.Add(messageDto);
+            _context.SaveChanges(); // Synchronously save changes
+
+            // Return the response
             return Json(new { response });
         }
 
-        // Add other controller actions as needed...
-
         private string SendMessage(string message)
-        {
-            try
+        { try
+            
             {
+              
                 var result = _assistantService.Message(
                     assistantId: _draftId,
                     sessionId: _sessionId,
@@ -86,7 +138,7 @@ namespace thesis_lawyer.Controllers
                         Text = message
                     }
                 );
-                Console.WriteLine(message);
+                
 
                 return result.Result.Output.Generic[0].Text;
             }
