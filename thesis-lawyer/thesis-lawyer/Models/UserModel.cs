@@ -12,6 +12,7 @@ namespace thesis_lawyer.Models
     
         public string FirstName { get; set; }
         public bool isPremium { get; set; }
+        [JsonIgnore]
         public ICollection<HistoryChat> HistoryChats { get; set; }
         [JsonIgnore]
         public ICollection<Chat> Chats { get; set; }

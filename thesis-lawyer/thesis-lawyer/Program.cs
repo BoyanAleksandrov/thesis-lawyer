@@ -1,6 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using thesis_lawyer.Data;
+using Newtonsoft.Json;
 using thesis_lawyer.Models;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,7 +15,11 @@ builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 builder.Services.AddDefaultIdentity<UserModel>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddEntityFrameworkStores<ApplicationDbContext>();
-builder.Services.AddControllersWithViews();
+builder.Services.AddControllersWithViews()
+    .AddJsonOptions(options =>
+    {
+        options.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles;
+    });
 builder.Services.AddSession(); // Add session services
 
 var app = builder.Build();

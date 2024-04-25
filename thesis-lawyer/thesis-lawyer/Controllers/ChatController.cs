@@ -12,6 +12,7 @@ using System.Security.Claims;
 using thesis_lawyer.Extensions;
 using IBM.Watson.Assistant.v2;
 using Microsoft.AspNetCore.Http;
+using System.Data;
 
 namespace thesis_lawyer.Controllers
 {
@@ -37,16 +38,19 @@ namespace thesis_lawyer.Controllers
             // Retrieve or create the assistant service, session ID, and current chat
            
            // _assistantService = HttpContext.Session.GetObject<AssistantService>("AssistantService");
-         
-            _sessionId = HttpContext.Session.GetString("SessionId");
+            var user = _userManager.GetUserAsync(User).Result;
+         //   _sessionId = HttpContext.Session.GetString("SessionId");
             _currentChat = HttpContext.Session.GetObject<Chat>("CurrentChat");
 
-            InitializeDependencies();
+            _sessionId = null;
+             
+            var ChatHistory = _context.Chat.Include(c => c.User).Where(c => c.User.Id == user.Id).ToList();
+        
              
           
 
-            // Pass the new chat session to the view
-            return View(_currentChat);
+            // Pass the new _chat session to the view
+            return View(ChatHistory);
         }
 
         private void InitializeDependencies()
@@ -95,7 +99,11 @@ namespace thesis_lawyer.Controllers
         [HttpPost]
         public IActionResult SendMessageToWatson(string message)
         {
-            
+            if (_sessionId == null)
+            {
+                InitializeDependencies();
+            }
+
             // Use _currentChat in your method
             var response = SendMessage(message);
 
