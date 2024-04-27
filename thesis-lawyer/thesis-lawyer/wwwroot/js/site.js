@@ -1,4 +1,7 @@
-﻿$(function () {
+﻿function alertUnsigned(){
+    alert("You must be signed in to use this feature!");
+}
+$(function () {
     function Message(arg) {
         this.text = arg.text;
         this.message_side = arg.message_side;
@@ -17,6 +20,7 @@
         return $('.message_input').val().trim();
     }
 
+   
     function sendMessage(text) {
         if (text === '') {
             return;

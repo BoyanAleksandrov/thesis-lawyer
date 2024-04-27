@@ -18,6 +18,18 @@
     <li class="nav-item px-3">
         <a href="/Chat/chatlawyer" class="btn btn-primary" style="background-color: #4495cb; width: auto">Try now</a>
     </li>
+    <li class="nav-item   ">
+        <a class="nav-link" href="#home">Home</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#features">Features</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#pricing">Pricing</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#faq">FAQ</a>
+    </li>
     <li class="nav-item">
        @{
            var firstName = "";
@@ -26,7 +38,7 @@
                var user = await UserManager.GetUserAsync(User);
                if (user != null)
                {
-                   firstName = user.Email; // Assuming FirstName is the property you want to display
+                   firstName = user.FirstName; // Assuming FirstName is the property you want to display
                }
            }
        }
@@ -45,6 +57,18 @@ else
                 style="background-color: #4495cb; width: auto"><a style="color: white;text-decoration: none;">Try
                 now</a>
         </button>
+    </li>
+    <li class="nav-item   ">
+        <a class="nav-link" href="#home">Home</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#features">Features</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#pricing">Pricing</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#faq">FAQ</a>
     </li>
     <li class="nav-item">
         <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Register">Register</a>

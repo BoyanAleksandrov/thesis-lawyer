@@ -38,4 +38,8 @@
     <_ContentIncludedByDefault Remove="Views\Chat\Chat.cshtml" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\Images" />
+  </ItemGroup>
+
 </Project>
