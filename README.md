@@ -61,5 +61,18 @@ To get started with Mr. Lawyer, follow these simple steps:
    ```sh
    git clone https://github.com/BoyanAleksandrov/thesis-lawyer.git
    ```
+2. **Install Dependencies**: Ensure you have all necessary dependencies installed. If you're missing any, please check the Dependencies section of this README.
+3. **Build and Run**: Navigate to the project directory and build the application using the .NET CLI or the PowerShell.
+   ```sh
+   dotnet build
+   ```
+4. **Run the Application**: Once the build process is complete, run the application using the following command:
+   ```sh
+   dotnet run
+   ```
+5. **Access the Application**: Open your web browser and navigate to `http://localhost:xxxx`(the port will be shown on the console) to access the Mr. Lawyer application.
+6. **Explore and Use**: Once the application is running, explore the various features provided by Mr. Lawyer, including chat functionality and admin panel access.
 
-![GitHub repo size](https://img.shields.io/github/repo-size/BoyanAleksandrov/thesis-lawyer)
+## Additional Information
+
+- **GitHub Repository Size**: ![GitHub repo size](https://img.shields.io/github/repo-size/BoyanAleksandrov/thesis-lawyer)
