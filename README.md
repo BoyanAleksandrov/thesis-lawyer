@@ -7,7 +7,8 @@ This web application is designed to make your life easier in hard situations.Whe
 
 ## Features
 
- ![Screenshot 2024-04-27 164032](https://github.com/BoyanAleksandrov/thesis-lawyer/assets/80381466/915b11b4-7529-4455-9d55-3d2057e9ade1)
+![sdssa](https://github.com/BoyanAleksandrov/thesis-lawyer/assets/80381466/87029275-2c03-4145-a9e5-e32f72fae881)
+
 
 ### Chat With Mr. Lawyer
 - Users can easily access the chat window by clicking on the blue button "Chat Now".
@@ -30,5 +31,35 @@ This web application is designed to make your life easier in hard situations.Whe
   
 ![bgbg](https://github.com/BoyanAleksandrov/thesis-lawyer/assets/80381466/35595804-0215-42c4-b03c-472fbdc14d1f)
 
+## Dependencies
+
+### Framework
+
+- **.NET Framework**: Version 6.0 or higher.
+
+### NuGet Packages
+
+- **IBM.Watson.Assistant.v2**
+- **Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore**
+- **Microsoft.AspNetCore.Identity.EntityFrameworkCore**
+- **Microsoft.AspNetCore.Identity.UI**
+- **Microsoft.EntityFrameworkCore.SqlServer**
+- **Microsoft.EntityFrameworkCore.Sqlite**
+- **Microsoft.EntityFrameworkCore.Tools**
+- **Microsoft.VisualStudio.Azure.Containers.Tools.Targets**
+- **Microsoft.VisualStudio.Web.CodeGeneration.Design**
+
+### Other Dependencies
+
+- **Runtime Environment**: The application is compatible with .NET 6.0 runtime environment.
+
 ## Getting started
+
+To get started with Mr. Lawyer, follow these simple steps:
+
+1. **Clone the Repository**: Clone the Mr. Lawyer repository to your local machine.
+   ```sh
+   git clone https://github.com/BoyanAleksandrov/thesis-lawyer.git
+   ```
+
 ![GitHub repo size](https://img.shields.io/github/repo-size/BoyanAleksandrov/thesis-lawyer)
