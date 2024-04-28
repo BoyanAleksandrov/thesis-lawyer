@@ -22,6 +22,7 @@ public class AdminController : Controller
     
     public IActionResult Dashboard()
     {
+        
         var users = _context.UserModels.ToList();
         return View(users);
     }

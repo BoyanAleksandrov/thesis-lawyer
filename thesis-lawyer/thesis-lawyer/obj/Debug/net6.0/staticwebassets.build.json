@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "nTB1nbkCWDEXXW6O+aieoZbWxh4Yabd8zKJKpJhqEaw=",
+  "Hash": "oVsvbUxR4m876tfXhpaPSbbKjgsqoKG7I6sOmgFKBB8=",
   "Source": "thesis-lawyer",
   "BasePath": "_content/thesis-lawyer",
   "Mode": "Default",
@@ -1193,6 +1193,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Boyan1\\Documents\\GitHub\\thesis-lawyer\\thesis-lawyer\\thesis-lawyer\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\thesis-lawyer.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\Boyan1\\Documents\\GitHub\\thesis-lawyer\\thesis-lawyer\\thesis-lawyer\\wwwroot\\css\\403.css",
+      "SourceId": "thesis-lawyer",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Boyan1\\Documents\\GitHub\\thesis-lawyer\\thesis-lawyer\\thesis-lawyer\\wwwroot\\",
+      "BasePath": "_content/thesis-lawyer",
+      "RelativePath": "css/403.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\403.css"
     },
     {
       "Identity": "C:\\Users\\Boyan1\\Documents\\GitHub\\thesis-lawyer\\thesis-lawyer\\thesis-lawyer\\wwwroot\\css\\chat.css",
