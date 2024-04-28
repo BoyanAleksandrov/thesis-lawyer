@@ -22,6 +22,7 @@ namespace thesis_lawyer.Controllers
         private readonly string _draftId = "7f5820e4-4b80-41a2-ba68-db3789ebe733";
         private AssistantService _assistantService;
         private static string _sessionId;
+        private static string oldSession;
         private Chat _currentChat;
         private readonly UserManager<UserModel> _userManager;
         private readonly ApplicationDbContext _context;
@@ -33,35 +34,51 @@ namespace thesis_lawyer.Controllers
             _assistantService = CreateAssistantService();
         }
 
-        public IActionResult chatlawyer()
+        public IActionResult chatlawyer(int chatId)
         {
-            // Retrieve or create the assistant service, session ID, and current chat
-           
-           // _assistantService = HttpContext.Session.GetObject<AssistantService>("AssistantService");
+            if (chatId != 0)
+            {
+                oldSession = _context.Chat.FirstOrDefault(x => x.Id == chatId).SessionId;
+
+            }
+              
+                var chatList = _context.HistoryChats.Where(c => chatId == c.ChatId).Select(x => new
+                {
+                    Message = x.Message,
+                    Category = x.MessageCategory
+                });
+                Console.WriteLine("lllllllllllllll");
+                Console.WriteLine(_sessionId);
+                return View(chatList);
+            
+
+        }
+
+        private void InitializeDependenciesForOldChat()
+        {
+            _currentChat = _context.Chat.FirstOrDefault(x => x.SessionId == oldSession);
+            _assistantService = CreateAssistantService();
+            _sessionId = CreateSession(_assistantService);
             var user = _userManager.GetUserAsync(User).Result;
-         //   _sessionId = HttpContext.Session.GetString("SessionId");
-            _currentChat = HttpContext.Session.GetObject<Chat>("CurrentChat");
-
-            _sessionId = null;
-             
-            var ChatHistory = _context.Chat.Include(c => c.User).Where(c => c.User.Id == user.Id).ToList();
-        
-             
-          
-
-            // Pass the new _chat session to the view
-            return View(ChatHistory);
+          //  _currentChat = CreateNewChatForUser(user, _context);
+         
+            // Store dependencies in session
+           // HttpContext.Session.SetObject("AssistantService", _assistantService);
+           
+            Console.WriteLine(_sessionId);
+            HttpContext.Session.SetObject("CurrentChat", _currentChat);
         }
 
         private void InitializeDependencies()
         {
+            
             _assistantService = CreateAssistantService();
             _sessionId = CreateSession(_assistantService);
             var user = _userManager.GetUserAsync(User).Result;
-            _currentChat = CreateNewChatForUser(user, _context);
-
+              _currentChat = CreateNewChatForUser(user, _context);
+         
             // Store dependencies in session
-           // HttpContext.Session.SetObject("AssistantService", _assistantService);
+            // HttpContext.Session.SetObject("AssistantService", _assistantService);
             HttpContext.Session.SetString("SessionId", _sessionId);
             Console.WriteLine(_sessionId);
             HttpContext.Session.SetObject("CurrentChat", _currentChat);
@@ -86,6 +103,7 @@ namespace thesis_lawyer.Controllers
             var newChat = new Chat
             {
                 User = user,
+                SessionId = _sessionId,
                 Messages = new List<HistoryChat>()
             };
 
@@ -99,11 +117,19 @@ namespace thesis_lawyer.Controllers
         [HttpPost]
         public IActionResult SendMessageToWatson(string message)
         {
-            if (_sessionId == null)
+            if (oldSession != null)
+            {
+                InitializeDependenciesForOldChat();
+            }
+            else
             {
                 InitializeDependencies();
             }
-
+       
+               
+            Console.WriteLine("DDDDDDDDDDDDDDDD");
+            Console.WriteLine(_currentChat.Id);
+Console.WriteLine(_sessionId);
             // Use _currentChat in your method
             var response = SendMessage(message);
 

@@ -1,37 +1,45 @@
-﻿function alertUnsigned(){
-    alert("You must be signed in to use this feature!");
-}
-$(function () {
-    function Message(arg) {
-        this.text = arg.text;
-        this.message_side = arg.message_side;
-        this.draw = function () {
-            var $message = $($('.message_template').clone().html());
-            $message.addClass(this.message_side).find('.text').html(this.text);
+﻿$(function () {
+    function displayMessages(messages) {
+        messages.forEach(function (msg) {
+            var $message = $('<div class="message ' + msg.message_side + '"><div class="avatar"></div><div class="text_wrapper"><div class="text">' + msg.text + '</div></div></div>');
             $('.messages').append($message);
             setTimeout(function () {
                 $message.addClass('appeared');
             }, 0);
-        };
-        return this;
+        });
     }
+
+    function loadMessages() {
+        $.ajax({
+            url: '/Chat/chatlawyer',
+            type: 'GET',
+            success: function (data) {
+                displayMessages(data);
+            },
+            error: function () {
+                console.log('Error loading messages.');
+            }
+        });
+    }
+
+    // Load messages when the page loads
+    loadMessages();
 
     function getMessageText() {
         return $('.message_input').val().trim();
     }
 
-   
     function sendMessage(text) {
         if (text === '') {
             return;
         }
         $('.message_input').val('');
         var $messages = $('.messages');
-        var message = new Message({
+        var message = {
             text: text,
             message_side: 'right'
-        });
-        message.draw();
+        };
+        displayMessages([message]);
 
         $.ajax({
             url: '/Chat/SendMessageToWatson/',
@@ -41,11 +49,11 @@ $(function () {
             },
             success: function (response) {
                 var answer = response.response;
-                var answerMessage = new Message({
+                var answerMessage = {
                     text: answer,
                     message_side: 'left'
-                });
-                answerMessage.draw();
+                };
+                displayMessages([answerMessage]);
                 $messages.animate({ scrollTop: $messages.prop('scrollHeight') }, 300);
             }
         });

@@ -7,5 +7,6 @@ public class Chat
     [Key] public int Id { get; set; }
     [JsonIgnore]
    public UserModel User { get; set; }
-    public ICollection<HistoryChat> Messages { get; set; }
+   public string SessionId { get; set; }
+    public virtual ICollection<HistoryChat> Messages { get; set; }
 }
