@@ -6,8 +6,10 @@
     "\\thesis-lawyer\\thesis-lawyer\\Controllers",
     "\\thesis-lawyer\\thesis-lawyer\\Views",
     "\\thesis-lawyer\\thesis-lawyer\\Views\\Chat",
-    "\\thesis-lawyer\\thesis-lawyer\\Views\\Home"
+    "\\thesis-lawyer\\thesis-lawyer\\Views\\Home",
+    "\\thesis-lawyer\\unit-lawyer",
+    "\\thesis-lawyer\\unit-lawyer\\Controllers"
   ],
-  "SelectedNode": "\\thesis-lawyer\\thesis-lawyer\\Views",
+  "SelectedNode": "\\thesis-lawyer\\unit-lawyer\\Controllers",
   "PreviewInSolutionExplorer": false
 }
