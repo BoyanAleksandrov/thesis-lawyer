@@ -76,15 +76,20 @@ public class AdminController : Controller
     public IActionResult Delete(string id)
     {
         var user = _context.UserModels.Find(id);
-       if (user == null)
-       {
-           return RedirectToAction("Dashboard", "Admin");
-       }
+        if (user == null)
+        {
+            return RedirectToAction("Dashboard", "Admin");
+        }
 
-       _context.UserModels.Remove(user);
-       _context.SaveChanges(true);
+        // Retrieve associated chat records for the user and delete them
+        var userChats = _context.Chat.Where(c => c.User.Id == id).ToList();
+        _context.Chat.RemoveRange(userChats);
 
-       return RedirectToAction("Dashboard", "Admin");
+        // Now delete the user
+        _context.UserModels.Remove(user);
+        _context.SaveChanges();
+
+        return RedirectToAction("Dashboard", "Admin");
     }
 
     public IActionResult Create()

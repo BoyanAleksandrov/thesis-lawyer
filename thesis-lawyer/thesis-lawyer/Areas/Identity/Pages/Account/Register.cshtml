@@ -4,43 +4,47 @@
     ViewData["Title"] = "Register";
 }
 
-<h1>@ViewData["Title"]</h1>
+<h1 class="text-center">@ViewData["Title"]</h1>
 
-<div class="row">
-    <div class="col-md-4">
-        <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post">
-            <h2>Create a new account.</h2>
+<div class="row justify-content-center mt-5">
+    <div class="col-md-6">
+        <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post" class="p-4 border rounded bg-light">
+            <h2 class="text-center mb-4">Create a new account</h2>
             <hr />
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-floating">
-                <input asp-for="Input.FirstName" class="form-control" autocomplete="username" aria-required="true" />
-                <label asp-for="Input.FirstName"></label>
+            <div class="form-group">
+                <label for="inputFirstName">First Name</label>
+                <input asp-for="Input.FirstName" class="form-control" autocomplete="username" aria-required="true" id="inputFirstName" placeholder="Enter your first name" required />
                 <span asp-validation-for="Input.FirstName" class="text-danger"></span>
+                <div class="invalid-feedback">Please enter your first name.</div>
             </div>
-            <div class="form-floating">
-                <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" />
-                <label asp-for="Input.Email"></label>
+            <div class="form-group">
+                <label for="inputEmail">Email</label>
+                <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" id="inputEmail" placeholder="Enter your email" required />
                 <span asp-validation-for="Input.Email" class="text-danger"></span>
+                <div class="invalid-feedback">Please enter a valid email address.</div>
             </div>
-            <div class="form-floating">
-                <input asp-for="Input.Password" class="form-control" autocomplete="new-password" aria-required="true" />
-                <label asp-for="Input.Password"></label>
+            <div class="form-group">
+                <label for="inputPassword">Password</label>
+                <input asp-for="Input.Password" class="form-control" autocomplete="new-password" aria-required="true" id="inputPassword" placeholder="Enter your password" required />
                 <span asp-validation-for="Input.Password" class="text-danger"></span>
+                <div class="invalid-feedback">Please enter a password.</div>
             </div>
-            <div class="form-floating">
-                <input asp-for="Input.ConfirmPassword" class="form-control" autocomplete="new-password" aria-required="true" />
-                <label asp-for="Input.ConfirmPassword"></label>
+            <div class="form-group">
+                <label for="inputConfirmPassword">Confirm Password</label>
+                <input asp-for="Input.ConfirmPassword" class="form-control" autocomplete="new-password" aria-required="true" id="inputConfirmPassword" placeholder="Confirm your password" required />
                 <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+                <div class="invalid-feedback">Please confirm your password.</div>
             </div>
- <div class="form-check">
-                <input class="form-check-input" type="checkbox" asp-for="Input.isPremium" />
-                <label class="form-check-label" asp-for="Input.isPremium">Premium User</label>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" asp-for="Input.isPremium" id="inputPremium" />
+                <label class="form-check-label" for="inputPremium">Premium User</label>
             </div>
-
-            <button id="registerSubmit" type="submit" class="w-100 btn btn-lg btn-primary">Register</button>
+            <div class="text-center mt-3">
+                <button id="registerSubmit" type="submit" class="btn btn-primary btn-block">Register</button>
+            </div>
         </form>
     </div>
-   
 </div>
 
 @section Scripts {
