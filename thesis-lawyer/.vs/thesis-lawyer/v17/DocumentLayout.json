@@ -118,47 +118,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 7,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "index.css",
-              "DocumentMoniker": "C:\\Users\\Boyan1\\Documents\\GitHub\\thesis-lawyer\\thesis-lawyer\\thesis-lawyer\\wwwroot\\css\\index.css",
-              "RelativeDocumentMoniker": "thesis-lawyer\\wwwroot\\css\\index.css",
-              "ToolTip": "C:\\Users\\Boyan1\\Documents\\GitHub\\thesis-lawyer\\thesis-lawyer\\thesis-lawyer\\wwwroot\\css\\index.css",
-              "RelativeToolTip": "thesis-lawyer\\wwwroot\\css\\index.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-04-29T22:36:10.44Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "site.css",
-              "DocumentMoniker": "C:\\Users\\Boyan1\\Documents\\GitHub\\thesis-lawyer\\thesis-lawyer\\thesis-lawyer\\wwwroot\\css\\site.css",
-              "RelativeDocumentMoniker": "thesis-lawyer\\wwwroot\\css\\site.css",
-              "ToolTip": "C:\\Users\\Boyan1\\Documents\\GitHub\\thesis-lawyer\\thesis-lawyer\\thesis-lawyer\\wwwroot\\css\\site.css",
-              "RelativeToolTip": "thesis-lawyer\\wwwroot\\css\\site.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-04-29T22:36:05.367Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AdminController.cs",
-              "DocumentMoniker": "C:\\Users\\Boyan1\\Documents\\GitHub\\thesis-lawyer\\thesis-lawyer\\thesis-lawyer\\Controllers\\AdminController.cs",
-              "RelativeDocumentMoniker": "thesis-lawyer\\Controllers\\AdminController.cs",
-              "ToolTip": "C:\\Users\\Boyan1\\Documents\\GitHub\\thesis-lawyer\\thesis-lawyer\\thesis-lawyer\\Controllers\\AdminController.cs",
-              "RelativeToolTip": "thesis-lawyer\\Controllers\\AdminController.cs",
-              "ViewState": "AQIAAEIAAAAAAAAAAAAEwFQAAAA6AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T02:03:10.531Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 12,
@@ -249,12 +210,48 @@
               "Title": "chat.css",
               "DocumentMoniker": "C:\\Users\\Boyan1\\Documents\\GitHub\\thesis-lawyer\\thesis-lawyer\\thesis-lawyer\\wwwroot\\css\\chat.css",
               "RelativeDocumentMoniker": "thesis-lawyer\\wwwroot\\css\\chat.css",
-              "ToolTip": "C:\\Users\\Boyan1\\Documents\\GitHub\\thesis-lawyer\\thesis-lawyer\\thesis-lawyer\\wwwroot\\css\\chat.css*",
-              "RelativeToolTip": "thesis-lawyer\\wwwroot\\css\\chat.css*",
-              "ViewState": "AQIAANsAAAAAAAAAAAAmwPIAAAARAAAA",
+              "ToolTip": "C:\\Users\\Boyan1\\Documents\\GitHub\\thesis-lawyer\\thesis-lawyer\\thesis-lawyer\\wwwroot\\css\\chat.css",
+              "RelativeToolTip": "thesis-lawyer\\wwwroot\\css\\chat.css",
+              "ViewState": "AQIAAOEAAAAAAAAAAAAmwPIAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2024-04-29T01:43:30.697Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\Boyan1\\Documents\\GitHub\\thesis-lawyer\\thesis-lawyer\\thesis-lawyer\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "thesis-lawyer\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\Boyan1\\Documents\\GitHub\\thesis-lawyer\\thesis-lawyer\\thesis-lawyer\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "thesis-lawyer\\Controllers\\AdminController.cs",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAEwFQAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T02:03:10.531Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\Boyan1\\Documents\\GitHub\\thesis-lawyer\\thesis-lawyer\\thesis-lawyer\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "thesis-lawyer\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\Boyan1\\Documents\\GitHub\\thesis-lawyer\\thesis-lawyer\\thesis-lawyer\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "thesis-lawyer\\wwwroot\\css\\site.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-04-29T22:36:05.367Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "index.css",
+              "DocumentMoniker": "C:\\Users\\Boyan1\\Documents\\GitHub\\thesis-lawyer\\thesis-lawyer\\thesis-lawyer\\wwwroot\\css\\index.css",
+              "RelativeDocumentMoniker": "thesis-lawyer\\wwwroot\\css\\index.css",
+              "ToolTip": "C:\\Users\\Boyan1\\Documents\\GitHub\\thesis-lawyer\\thesis-lawyer\\thesis-lawyer\\wwwroot\\css\\index.css",
+              "RelativeToolTip": "thesis-lawyer\\wwwroot\\css\\index.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-04-29T22:36:10.44Z"
             },
             {
               "$type": "Document",

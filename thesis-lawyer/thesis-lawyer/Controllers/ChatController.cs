@@ -13,6 +13,7 @@ using thesis_lawyer.Extensions;
 using IBM.Watson.Assistant.v2;
 using Microsoft.AspNetCore.Http;
 using System.Data;
+using Microsoft.IdentityModel.Tokens;
 
 namespace thesis_lawyer.Controllers
 {
@@ -41,7 +42,8 @@ namespace thesis_lawyer.Controllers
                 oldSession = _context.Chat.FirstOrDefault(x => x.Id == chatId).SessionId;
 
             }
-              
+
+            _sessionId = null;
                 var chatList = _context.HistoryChats.Where(c => chatId == c.ChatId).Select(x => new
                 {
                     Message = x.Message,
@@ -117,25 +119,21 @@ namespace thesis_lawyer.Controllers
         [HttpPost]
         public IActionResult SendMessageToWatson(string message)
         {
-            if (oldSession != null)
+            if (!oldSession.IsNullOrEmpty())
             {
                 InitializeDependenciesForOldChat();
+                oldSession = null;
             }
-            else
+            else if(oldSession.IsNullOrEmpty()  && _sessionId.IsNullOrEmpty())
             {
                 InitializeDependencies();
             }
        
                
-            Console.WriteLine("DDDDDDDDDDDDDDDD");
-            Console.WriteLine(_currentChat.Id);
-Console.WriteLine(_sessionId);
+      
             // Use _currentChat in your method
             var response = SendMessage(message);
 
-            Console.WriteLine(message);
-        
-            Console.WriteLine(_draftId);
             var user = _userManager.GetUserAsync(User).Result;
 
             // Retrieve the current chat from the session
