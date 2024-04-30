@@ -49,8 +49,7 @@ namespace thesis_lawyer.Controllers
                     Message = x.Message,
                     Category = x.MessageCategory
                 });
-                Console.WriteLine("lllllllllllllll");
-                Console.WriteLine(_sessionId);
+             
                 return View(chatList);
             
 
@@ -67,7 +66,7 @@ namespace thesis_lawyer.Controllers
             // Store dependencies in session
            // HttpContext.Session.SetObject("AssistantService", _assistantService);
            
-            Console.WriteLine(_sessionId);
+     
             HttpContext.Session.SetObject("CurrentChat", _currentChat);
         }
 
@@ -82,7 +81,7 @@ namespace thesis_lawyer.Controllers
             // Store dependencies in session
             // HttpContext.Session.SetObject("AssistantService", _assistantService);
             HttpContext.Session.SetString("SessionId", _sessionId);
-            Console.WriteLine(_sessionId);
+          
             HttpContext.Session.SetObject("CurrentChat", _currentChat);
         }
 
@@ -154,7 +153,7 @@ namespace thesis_lawyer.Controllers
                 UserForeignKey = user.Id,
                 MessageCategory = "received", // Assuming you have a method to determine message category
             };
-Console.WriteLine(_sessionId);
+            
             // Add the message to the database
             _context.HistoryChats.Add(messageDto);
             _context.HistoryChats.Add(responseDto);
