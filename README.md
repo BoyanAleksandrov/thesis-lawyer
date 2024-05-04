@@ -73,6 +73,24 @@ To get started with Mr. Lawyer, follow these simple steps:
 5. **Access the Application**: Open your web browser and navigate to `http://localhost:xxxx`(the port will be shown on the console) to access the Mr. Lawyer application.
 6. **Explore and Use**: Once the application is running, explore the various features provided by Mr. Lawyer, including chat functionality and admin panel access.
 
+## Web Access
+If you don't feel like running the application on your machine you can access it on the following URL:
+```sh
+thesis-lawyer.azurewebsites.net
+```
+
+## Technologies Used
+
+- ![.NET](https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white)
+- ![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)
+- ![ASP.NET](https://img.shields.io/badge/ASP.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white)
+- ![ASP.NET MVC](https://img.shields.io/badge/ASP.NET_MVC-5C2D91?style=for-the-badge&logo=.net&logoColor=white)
+- ![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
+- ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+- ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+- ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+
+
 ## Additional Information
 
 - **GitHub Repository Size**: ![GitHub repo size](https://img.shields.io/github/repo-size/BoyanAleksandrov/thesis-lawyer)
