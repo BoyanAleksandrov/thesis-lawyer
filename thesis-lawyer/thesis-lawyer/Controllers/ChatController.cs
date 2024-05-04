@@ -42,7 +42,7 @@ namespace thesis_lawyer.Controllers
                 oldSession = _context.Chat.FirstOrDefault(x => x.Id == chatId).SessionId;
 
             }
-
+            
             _sessionId = null;
                 var chatList = _context.HistoryChats.Where(c => chatId == c.ChatId).Select(x => new
                 {

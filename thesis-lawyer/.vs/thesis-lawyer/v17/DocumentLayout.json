@@ -3,6 +3,26 @@
   "WorkspaceRootPath": "C:\\Users\\Boyan1\\Documents\\GitHub\\thesis-lawyer\\thesis-lawyer\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8DC27020-3023-4E29-A083-4D194663C7D3}|thesis-lawyer\\thesis-lawyer.csproj|c:\\users\\boyan1\\documents\\github\\thesis-lawyer\\thesis-lawyer\\thesis-lawyer\\thesis-lawyer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{8DC27020-3023-4E29-A083-4D194663C7D3}|thesis-lawyer\\thesis-lawyer.csproj|solutionrelative:thesis-lawyer\\thesis-lawyer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DC27020-3023-4E29-A083-4D194663C7D3}|thesis-lawyer\\thesis-lawyer.csproj|c:\\users\\boyan1\\documents\\github\\thesis-lawyer\\thesis-lawyer\\thesis-lawyer\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8DC27020-3023-4E29-A083-4D194663C7D3}|thesis-lawyer\\thesis-lawyer.csproj|solutionrelative:thesis-lawyer\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DC27020-3023-4E29-A083-4D194663C7D3}|thesis-lawyer\\thesis-lawyer.csproj|c:\\users\\boyan1\\documents\\github\\thesis-lawyer\\thesis-lawyer\\thesis-lawyer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DC27020-3023-4E29-A083-4D194663C7D3}|thesis-lawyer\\thesis-lawyer.csproj|solutionrelative:thesis-lawyer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E6C4B9F-371E-46A4-B778-B2BD061CC170}|LawyerTests\\LawyerTests.csproj|c:\\users\\boyan1\\documents\\github\\thesis-lawyer\\thesis-lawyer\\lawyertests\\chattests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E6C4B9F-371E-46A4-B778-B2BD061CC170}|LawyerTests\\LawyerTests.csproj|solutionrelative:lawyertests\\chattests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E6C4B9F-371E-46A4-B778-B2BD061CC170}|LawyerTests\\LawyerTests.csproj|c:\\users\\boyan1\\documents\\github\\thesis-lawyer\\thesis-lawyer\\lawyertests\\chathistorytests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E6C4B9F-371E-46A4-B778-B2BD061CC170}|LawyerTests\\LawyerTests.csproj|solutionrelative:lawyertests\\chathistorytests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8DC27020-3023-4E29-A083-4D194663C7D3}|thesis-lawyer\\thesis-lawyer.csproj|c:\\users\\boyan1\\documents\\github\\thesis-lawyer\\thesis-lawyer\\thesis-lawyer\\wwwroot\\css\\chat.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{8DC27020-3023-4E29-A083-4D194663C7D3}|thesis-lawyer\\thesis-lawyer.csproj|solutionrelative:thesis-lawyer\\wwwroot\\css\\chat.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
@@ -27,10 +47,6 @@
       "RelativeMoniker": "D:0:0:{8DC27020-3023-4E29-A083-4D194663C7D3}|thesis-lawyer\\thesis-lawyer.csproj|solutionrelative:thesis-lawyer\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8DC27020-3023-4E29-A083-4D194663C7D3}|thesis-lawyer\\thesis-lawyer.csproj|c:\\users\\boyan1\\documents\\github\\thesis-lawyer\\thesis-lawyer\\thesis-lawyer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8DC27020-3023-4E29-A083-4D194663C7D3}|thesis-lawyer\\thesis-lawyer.csproj|solutionrelative:thesis-lawyer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8DC27020-3023-4E29-A083-4D194663C7D3}|thesis-lawyer\\thesis-lawyer.csproj|c:\\users\\boyan1\\documents\\github\\thesis-lawyer\\thesis-lawyer\\thesis-lawyer\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8DC27020-3023-4E29-A083-4D194663C7D3}|thesis-lawyer\\thesis-lawyer.csproj|solutionrelative:thesis-lawyer\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -39,16 +55,8 @@
       "RelativeMoniker": "D:0:0:{8DC27020-3023-4E29-A083-4D194663C7D3}|thesis-lawyer\\thesis-lawyer.csproj|solutionrelative:thesis-lawyer\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0E6C4B9F-371E-46A4-B778-B2BD061CC170}|LawyerTests\\LawyerTests.csproj|c:\\users\\boyan1\\documents\\github\\thesis-lawyer\\thesis-lawyer\\lawyertests\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E6C4B9F-371E-46A4-B778-B2BD061CC170}|LawyerTests\\LawyerTests.csproj|solutionrelative:lawyertests\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8DC27020-3023-4E29-A083-4D194663C7D3}|thesis-lawyer\\thesis-lawyer.csproj|c:\\users\\boyan1\\documents\\github\\thesis-lawyer\\thesis-lawyer\\thesis-lawyer\\entities\\chat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8DC27020-3023-4E29-A083-4D194663C7D3}|thesis-lawyer\\thesis-lawyer.csproj|solutionrelative:thesis-lawyer\\entities\\chat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0E6C4B9F-371E-46A4-B778-B2BD061CC170}|LawyerTests\\LawyerTests.csproj|c:\\users\\boyan1\\documents\\github\\thesis-lawyer\\thesis-lawyer\\lawyertests\\chathistorytests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E6C4B9F-371E-46A4-B778-B2BD061CC170}|LawyerTests\\LawyerTests.csproj|solutionrelative:lawyertests\\chathistorytests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8DC27020-3023-4E29-A083-4D194663C7D3}|thesis-lawyer\\thesis-lawyer.csproj|c:\\users\\boyan1\\documents\\github\\thesis-lawyer\\thesis-lawyer\\thesis-lawyer\\entities\\historychat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -71,20 +79,12 @@
       "RelativeMoniker": "D:0:0:{8DC27020-3023-4E29-A083-4D194663C7D3}|thesis-lawyer\\thesis-lawyer.csproj|solutionrelative:thesis-lawyer\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8DC27020-3023-4E29-A083-4D194663C7D3}|thesis-lawyer\\thesis-lawyer.csproj|c:\\users\\boyan1\\documents\\github\\thesis-lawyer\\thesis-lawyer\\thesis-lawyer\\thesis-lawyer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{8DC27020-3023-4E29-A083-4D194663C7D3}|thesis-lawyer\\thesis-lawyer.csproj|solutionrelative:thesis-lawyer\\thesis-lawyer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0E6C4B9F-371E-46A4-B778-B2BD061CC170}|LawyerTests\\LawyerTests.csproj|c:\\users\\boyan1\\documents\\github\\thesis-lawyer\\thesis-lawyer\\lawyertests\\lawyertests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{0E6C4B9F-371E-46A4-B778-B2BD061CC170}|LawyerTests\\LawyerTests.csproj|solutionrelative:lawyertests\\lawyertests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8DC27020-3023-4E29-A083-4D194663C7D3}|thesis-lawyer\\thesis-lawyer.csproj|c:\\users\\boyan1\\documents\\github\\thesis-lawyer\\thesis-lawyer\\thesis-lawyer\\views\\chat\\chatlawyer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{8DC27020-3023-4E29-A083-4D194663C7D3}|thesis-lawyer\\thesis-lawyer.csproj|solutionrelative:thesis-lawyer\\views\\chat\\chatlawyer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8DC27020-3023-4E29-A083-4D194663C7D3}|thesis-lawyer\\thesis-lawyer.csproj|c:\\users\\boyan1\\documents\\github\\thesis-lawyer\\thesis-lawyer\\thesis-lawyer\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{8DC27020-3023-4E29-A083-4D194663C7D3}|thesis-lawyer\\thesis-lawyer.csproj|solutionrelative:thesis-lawyer\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8DC27020-3023-4E29-A083-4D194663C7D3}|thesis-lawyer\\thesis-lawyer.csproj|c:\\users\\boyan1\\documents\\github\\thesis-lawyer\\thesis-lawyer\\thesis-lawyer\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -118,35 +118,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "HistoryChat.cs",
-              "DocumentMoniker": "C:\\Users\\Boyan1\\Documents\\GitHub\\thesis-lawyer\\thesis-lawyer\\thesis-lawyer\\Entities\\HistoryChat.cs",
-              "RelativeDocumentMoniker": "thesis-lawyer\\Entities\\HistoryChat.cs",
-              "ToolTip": "C:\\Users\\Boyan1\\Documents\\GitHub\\thesis-lawyer\\thesis-lawyer\\thesis-lawyer\\Entities\\HistoryChat.cs",
-              "RelativeToolTip": "thesis-lawyer\\Entities\\HistoryChat.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAuAAAA",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Boyan1\\Documents\\GitHub\\thesis-lawyer\\thesis-lawyer\\thesis-lawyer\\Program.cs",
+              "RelativeDocumentMoniker": "thesis-lawyer\\Program.cs",
+              "ToolTip": "C:\\Users\\Boyan1\\Documents\\GitHub\\thesis-lawyer\\thesis-lawyer\\thesis-lawyer\\Program.cs",
+              "RelativeToolTip": "thesis-lawyer\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAA7AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T02:51:19.611Z"
+              "WhenOpened": "2024-03-27T22:41:56.316Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "chatlawyer.cshtml",
-              "DocumentMoniker": "C:\\Users\\Boyan1\\Documents\\GitHub\\thesis-lawyer\\thesis-lawyer\\thesis-lawyer\\Views\\Chat\\chatlawyer.cshtml",
-              "RelativeDocumentMoniker": "thesis-lawyer\\Views\\Chat\\chatlawyer.cshtml",
-              "ToolTip": "C:\\Users\\Boyan1\\Documents\\GitHub\\thesis-lawyer\\thesis-lawyer\\thesis-lawyer\\Views\\Chat\\chatlawyer.cshtml",
-              "RelativeToolTip": "thesis-lawyer\\Views\\Chat\\chatlawyer.cshtml",
-              "ViewState": "AQIAACwAAAAAAAAAAAASwEIAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-27T23:26:30.972Z"
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Boyan1\\Documents\\GitHub\\thesis-lawyer\\thesis-lawyer\\thesis-lawyer\\appsettings.json",
+              "RelativeDocumentMoniker": "thesis-lawyer\\appsettings.json",
+              "ToolTip": "C:\\Users\\Boyan1\\Documents\\GitHub\\thesis-lawyer\\thesis-lawyer\\thesis-lawyer\\appsettings.json",
+              "RelativeToolTip": "thesis-lawyer\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-04-29T01:23:06.06Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "Register.cshtml",
               "DocumentMoniker": "C:\\Users\\Boyan1\\Documents\\GitHub\\thesis-lawyer\\thesis-lawyer\\thesis-lawyer\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
               "RelativeDocumentMoniker": "thesis-lawyer\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
@@ -158,19 +160,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Boyan1\\Documents\\GitHub\\thesis-lawyer\\thesis-lawyer\\thesis-lawyer\\Program.cs",
-              "RelativeDocumentMoniker": "thesis-lawyer\\Program.cs",
-              "ToolTip": "C:\\Users\\Boyan1\\Documents\\GitHub\\thesis-lawyer\\thesis-lawyer\\thesis-lawyer\\Program.cs",
-              "RelativeToolTip": "thesis-lawyer\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-27T22:41:56.316Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 0,
               "Title": "thesis-lawyer.csproj",
               "DocumentMoniker": "C:\\Users\\Boyan1\\Documents\\GitHub\\thesis-lawyer\\thesis-lawyer\\thesis-lawyer\\thesis-lawyer.csproj",
               "RelativeDocumentMoniker": "thesis-lawyer\\thesis-lawyer.csproj",
@@ -178,23 +168,25 @@
               "RelativeToolTip": "thesis-lawyer\\thesis-lawyer.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-04-29T02:01:14.834Z"
+              "WhenOpened": "2024-04-29T02:01:14.834Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 4,
               "Title": "ChatHistoryTests.cs",
               "DocumentMoniker": "C:\\Users\\Boyan1\\Documents\\GitHub\\thesis-lawyer\\thesis-lawyer\\LawyerTests\\ChatHistoryTests.cs",
               "RelativeDocumentMoniker": "LawyerTests\\ChatHistoryTests.cs",
               "ToolTip": "C:\\Users\\Boyan1\\Documents\\GitHub\\thesis-lawyer\\thesis-lawyer\\LawyerTests\\ChatHistoryTests.cs",
               "RelativeToolTip": "LawyerTests\\ChatHistoryTests.cs",
-              "ViewState": "AQIAAEAAAAAAAAAAAAAAAEEAAAAAAAAA",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAqwEEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T02:38:13.319Z"
+              "WhenOpened": "2024-04-29T02:38:13.319Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Boyan1\\Documents\\GitHub\\thesis-lawyer\\thesis-lawyer\\thesis-lawyer\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "thesis-lawyer\\Data\\ApplicationDbContext.cs",
@@ -206,7 +198,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "chat.css",
               "DocumentMoniker": "C:\\Users\\Boyan1\\Documents\\GitHub\\thesis-lawyer\\thesis-lawyer\\thesis-lawyer\\wwwroot\\css\\chat.css",
               "RelativeDocumentMoniker": "thesis-lawyer\\wwwroot\\css\\chat.css",
@@ -219,7 +211,44 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "chatlawyer.cshtml",
+              "DocumentMoniker": "C:\\Users\\Boyan1\\Documents\\GitHub\\thesis-lawyer\\thesis-lawyer\\thesis-lawyer\\Views\\Chat\\chatlawyer.cshtml",
+              "RelativeDocumentMoniker": "thesis-lawyer\\Views\\Chat\\chatlawyer.cshtml",
+              "ToolTip": "C:\\Users\\Boyan1\\Documents\\GitHub\\thesis-lawyer\\thesis-lawyer\\thesis-lawyer\\Views\\Chat\\chatlawyer.cshtml",
+              "RelativeToolTip": "thesis-lawyer\\Views\\Chat\\chatlawyer.cshtml",
+              "ViewState": "AQIAACwAAAAAAAAAAAASwEIAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-27T23:26:30.972Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "ChatTests.cs",
+              "DocumentMoniker": "C:\\Users\\Boyan1\\Documents\\GitHub\\thesis-lawyer\\thesis-lawyer\\LawyerTests\\ChatTests.cs",
+              "RelativeDocumentMoniker": "LawyerTests\\ChatTests.cs",
+              "ToolTip": "C:\\Users\\Boyan1\\Documents\\GitHub\\thesis-lawyer\\thesis-lawyer\\LawyerTests\\ChatTests.cs",
+              "RelativeToolTip": "LawyerTests\\ChatTests.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T02:59:34.092Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "HistoryChat.cs",
+              "DocumentMoniker": "C:\\Users\\Boyan1\\Documents\\GitHub\\thesis-lawyer\\thesis-lawyer\\thesis-lawyer\\Entities\\HistoryChat.cs",
+              "RelativeDocumentMoniker": "thesis-lawyer\\Entities\\HistoryChat.cs",
+              "ToolTip": "C:\\Users\\Boyan1\\Documents\\GitHub\\thesis-lawyer\\thesis-lawyer\\thesis-lawyer\\Entities\\HistoryChat.cs",
+              "RelativeToolTip": "thesis-lawyer\\Entities\\HistoryChat.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T02:51:19.611Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "AdminController.cs",
               "DocumentMoniker": "C:\\Users\\Boyan1\\Documents\\GitHub\\thesis-lawyer\\thesis-lawyer\\thesis-lawyer\\Controllers\\AdminController.cs",
               "RelativeDocumentMoniker": "thesis-lawyer\\Controllers\\AdminController.cs",
@@ -231,7 +260,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "site.css",
               "DocumentMoniker": "C:\\Users\\Boyan1\\Documents\\GitHub\\thesis-lawyer\\thesis-lawyer\\thesis-lawyer\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "thesis-lawyer\\wwwroot\\css\\site.css",
@@ -243,7 +272,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "index.css",
               "DocumentMoniker": "C:\\Users\\Boyan1\\Documents\\GitHub\\thesis-lawyer\\thesis-lawyer\\thesis-lawyer\\wwwroot\\css\\index.css",
               "RelativeDocumentMoniker": "thesis-lawyer\\wwwroot\\css\\index.css",
@@ -255,7 +284,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\Users\\Boyan1\\Documents\\GitHub\\thesis-lawyer\\thesis-lawyer\\thesis-lawyer\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "thesis-lawyer\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
@@ -267,7 +296,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "Register.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\Boyan1\\Documents\\GitHub\\thesis-lawyer\\thesis-lawyer\\thesis-lawyer\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
               "RelativeDocumentMoniker": "thesis-lawyer\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
@@ -279,7 +308,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "LawyerTests.csproj",
               "DocumentMoniker": "C:\\Users\\Boyan1\\Documents\\GitHub\\thesis-lawyer\\thesis-lawyer\\LawyerTests\\LawyerTests.csproj",
               "RelativeDocumentMoniker": "LawyerTests\\LawyerTests.csproj",
@@ -291,19 +320,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "C:\\Users\\Boyan1\\Documents\\GitHub\\thesis-lawyer\\thesis-lawyer\\LawyerTests\\Class1.cs",
-              "RelativeDocumentMoniker": "LawyerTests\\Class1.cs",
-              "ToolTip": "C:\\Users\\Boyan1\\Documents\\GitHub\\thesis-lawyer\\thesis-lawyer\\LawyerTests\\Class1.cs",
-              "RelativeToolTip": "LawyerTests\\Class1.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAawCcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T02:59:34.092Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "Chat.cs",
               "DocumentMoniker": "C:\\Users\\Boyan1\\Documents\\GitHub\\thesis-lawyer\\thesis-lawyer\\thesis-lawyer\\Entities\\Chat.cs",
               "RelativeDocumentMoniker": "thesis-lawyer\\Entities\\Chat.cs",
@@ -315,7 +332,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "ChatController.cs",
               "DocumentMoniker": "C:\\Users\\Boyan1\\Documents\\GitHub\\thesis-lawyer\\thesis-lawyer\\thesis-lawyer\\Controllers\\ChatController.cs",
               "RelativeDocumentMoniker": "thesis-lawyer\\Controllers\\ChatController.cs",
@@ -327,7 +344,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "UserModel.cs",
               "DocumentMoniker": "C:\\Users\\Boyan1\\Documents\\GitHub\\thesis-lawyer\\thesis-lawyer\\thesis-lawyer\\Models\\UserModel.cs",
               "RelativeDocumentMoniker": "thesis-lawyer\\Models\\UserModel.cs",
@@ -339,7 +356,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "CreateUserModel.cs",
               "DocumentMoniker": "C:\\Users\\Boyan1\\Documents\\GitHub\\thesis-lawyer\\thesis-lawyer\\thesis-lawyer\\Models\\CreateUserModel.cs",
               "RelativeDocumentMoniker": "thesis-lawyer\\Models\\CreateUserModel.cs",
@@ -351,7 +368,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\Boyan1\\Documents\\GitHub\\thesis-lawyer\\thesis-lawyer\\thesis-lawyer\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "thesis-lawyer\\Controllers\\HomeController.cs",
@@ -360,18 +377,6 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-27T20:46:40.77Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Boyan1\\Documents\\GitHub\\thesis-lawyer\\thesis-lawyer\\thesis-lawyer\\appsettings.json",
-              "RelativeDocumentMoniker": "thesis-lawyer\\appsettings.json",
-              "ToolTip": "C:\\Users\\Boyan1\\Documents\\GitHub\\thesis-lawyer\\thesis-lawyer\\thesis-lawyer\\appsettings.json",
-              "RelativeToolTip": "thesis-lawyer\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-04-29T01:23:06.06Z"
             },
             {
               "$type": "Document",
