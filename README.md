@@ -73,6 +73,12 @@ To get started with Mr. Lawyer, follow these simple steps:
 5. **Access the Application**: Open your web browser and navigate to `http://localhost:xxxx`(the port will be shown on the console) to access the Mr. Lawyer application.
 6. **Explore and Use**: Once the application is running, explore the various features provided by Mr. Lawyer, including chat functionality and admin panel access.
 
+## Web Access
+If you don't feel like running the application on your machine you can access it on the following URL:
+```sh
+thesis-lawyer.azurewebsites.net
+```
+
 ## Technologies Used
 
 - ![.NET](https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white)
