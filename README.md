@@ -78,6 +78,16 @@ If you don't feel like running the application on your machine you can access it
 ```sh
 thesis-lawyer.azurewebsites.net
 ```
+## Admin Credentials
+In case you want to try the Admin dashboard feature please use the following account:
+- Email:
+```sh
+admin@gmail.com
+```
+- Password:
+```sh
+Admin!23
+```
 
 ## Technologies Used
 
