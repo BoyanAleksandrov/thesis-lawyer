@@ -30,9 +30,9 @@
               "Title": "AdminControllerTests.cs",
               "DocumentMoniker": "C:\\Users\\Boyan1\\Documents\\GitHub\\thesis-lawyer\\thesis-lawyer\\unit-lawyer\\Controllers\\AdminControllerTests.cs",
               "RelativeDocumentMoniker": "thesis-lawyer\\unit-lawyer\\Controllers\\AdminControllerTests.cs",
-              "ToolTip": "C:\\Users\\Boyan1\\Documents\\GitHub\\thesis-lawyer\\thesis-lawyer\\unit-lawyer\\Controllers\\AdminControllerTests.cs*",
-              "RelativeToolTip": "thesis-lawyer\\unit-lawyer\\Controllers\\AdminControllerTests.cs*",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAANAAAA",
+              "ToolTip": "C:\\Users\\Boyan1\\Documents\\GitHub\\thesis-lawyer\\thesis-lawyer\\unit-lawyer\\Controllers\\AdminControllerTests.cs",
+              "RelativeToolTip": "thesis-lawyer\\unit-lawyer\\Controllers\\AdminControllerTests.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-29T02:32:22.626Z",
               "EditorCaption": ""
@@ -47,8 +47,7 @@
               "RelativeToolTip": "thesis-lawyer\\thesis-lawyer\\Controllers\\HomeController.cs",
               "ViewState": "AQIAAAwAAAAAAAAAAAAAACMAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-27T19:43:56.901Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-27T19:43:56.901Z"
             },
             {
               "$type": "Document",
@@ -60,8 +59,7 @@
               "RelativeToolTip": "thesis-lawyer\\thesis-lawyer\\Views\\Home\\Index.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-27T19:43:45.627Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-27T19:43:45.627Z"
             }
           ]
         }

@@ -61,12 +61,6 @@ namespace thesis_lawyer.Controllers
             _assistantService = CreateAssistantService();
             _sessionId = CreateSession(_assistantService);
             var user = _userManager.GetUserAsync(User).Result;
-          //  _currentChat = CreateNewChatForUser(user, _context);
-         
-            // Store dependencies in session
-           // HttpContext.Session.SetObject("AssistantService", _assistantService);
-           
-     
             HttpContext.Session.SetObject("CurrentChat", _currentChat);
         }
 
@@ -77,12 +71,8 @@ namespace thesis_lawyer.Controllers
             _sessionId = CreateSession(_assistantService);
             var user = _userManager.GetUserAsync(User).Result;
               _currentChat = CreateNewChatForUser(user, _context);
-         
-            // Store dependencies in session
-            // HttpContext.Session.SetObject("AssistantService", _assistantService);
-            HttpContext.Session.SetString("SessionId", _sessionId);
-          
-            HttpContext.Session.SetObject("CurrentChat", _currentChat);
+              HttpContext.Session.SetString("SessionId", _sessionId);
+              HttpContext.Session.SetObject("CurrentChat", _currentChat);
         }
 
         private AssistantService CreateAssistantService()
@@ -129,8 +119,7 @@ namespace thesis_lawyer.Controllers
             }
        
                
-      
-            // Use _currentChat in your method
+     
             var response = SendMessage(message);
 
             var user = _userManager.GetUserAsync(User).Result;
